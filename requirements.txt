@@ -3,3 +3,6 @@ tensorflow-cpu
 numpy
 pillow
 streamlit-option-menu
+tensorflow
+numpy
+pillow
