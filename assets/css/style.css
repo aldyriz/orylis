@@ -1,0 +1,87 @@
+/* =========================
+   GLOBAL
+========================= */
+
+def load
+html, body, [class*="css"] {
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Hilangkan menu bawaan Streamlit */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 800;
+    color: #2E7D32;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #555555;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2E7D32;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    min-height: 220px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2E7D32;
+}
+
+.card-text {
+    color: #555555;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    color: #666666;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
