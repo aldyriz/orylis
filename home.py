@@ -18,7 +18,7 @@ st.set_page_config(
 #     options=[
 #         "Home",
 #         "Informasi Penyakit",
-#         "Deteksi Penyakit"
+#         "Klasifikasi Penyakit"
 #     ],
 #     icons=[
 #         "house",
@@ -39,7 +39,7 @@ selected = option_menu(
     options=[
         "Home",
         "Informasi Penyakit",
-        "Deteksi Penyakit"
+        "Klasifikasi Penyakit"
     ],
     icons=[
         "house",
@@ -51,7 +51,7 @@ selected = option_menu(
     default_index=[
         "Home",
         "Informasi Penyakit",
-        "Deteksi Penyakit"
+        "Klasifikasi Penyakit"
     ].index(st.session_state.selected_menu),
 
     styles={
@@ -293,9 +293,9 @@ if selected == "Home":
         col_btn1, col_btn2, col_empty = st.columns([1,1,1.5])
 
         with col_btn1:
-            if st.button("🌾 Mulai Deteksi"):
+            if st.button("🌾 Mulai Klasifikasi"):
 
-                st.session_state.selected_menu = "Deteksi Penyakit"
+                st.session_state.selected_menu = "Klasifikasi Penyakit"
                 st.rerun()
 
         with col_btn2:
@@ -465,6 +465,6 @@ elif selected == "Informasi Penyakit":
 
     show_info()
 
-elif selected == "Deteksi Penyakit":
+elif selected == "Klasifikasi Penyakit":
 
     show_deteksi()

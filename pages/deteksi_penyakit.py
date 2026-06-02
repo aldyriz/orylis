@@ -186,9 +186,23 @@ def show():
     # =========================
     with tab2:
 
-        camera_image = st.camera_input(
-            "Ambil foto daun padi"
-        )
+        if "camera_on" not in st.session_state:
+            st.session_state.camera_on = False
+
+        col1, col2, col3 = st.columns([1, 1, 4])
+
+        with col1:
+            if st.button("📷 Hidupkan Kamera"):
+                st.session_state.camera_on = True
+
+        with col2:
+            if st.button("❌ Matikan Kamera"):
+                st.session_state.camera_on = False
+
+        if st.session_state.camera_on:
+            camera_image = st.camera_input(
+                "Ambil foto daun padi"
+            )
 
     # =========================
     # SELECT IMAGE
