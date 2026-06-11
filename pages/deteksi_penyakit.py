@@ -419,7 +419,10 @@ def show():
             Sistem Klasifikasi Penyakit Daun Padi Berbasis Deep Learning
             <br><br>
             © 2026 ORYLIS Team. <br>
-            Kontak: rachmatullahrizaldy4@gmail.com
+            Oleh: Prof. Dr. Rima Tri Wahyuningrum, ST., MT.<br>
+            Rachmatullah Rizaldy<br>
+            Prodi: Teknik Informatika dan S2 PSDA<br>
+            Universitas Trunojoyo Madura
         </center>
         """,
         unsafe_allow_html=True
